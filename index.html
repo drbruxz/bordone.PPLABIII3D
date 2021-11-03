@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="js/scripts.js"></script>
+    <link rel="stylesheet" href="./css/estilos.css" />
+
+    <title>Listado Automoviles</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <img src="./logo.png" />
+        <ul>
+          <li><a href="">Nosotros</a></li>
+          <li><a href="">Anuncio</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contacto</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="crud">
+      <section clas="form-articulos">
+        <h2>Alta articulos</h2>
+        <form>
+          <fieldset>
+            <legend>Informacion del anuncio</legend>
+            <div class="form-item">
+              <p>Título</p>
+
+              <input
+                type="text"
+                name="txtTitulo"
+                placeholder="Título"
+                autocomplete="off"
+              />
+            </div>
+            <br />
+            <div class="form-item">
+              <p>Transaccion</p>
+              <input type="radio" name="rdoTransaccion" value="alquiler" />
+              Alquiler
+              <input type="radio" name="rdoTransaccion" value="venta" />Venta
+            </div>
+            <br />
+
+            <div class="form-item">
+              <p>Descripcion</p>
+
+              <input
+                type="text"
+                name="txtDescripcion"
+                placeholder="Descripcion"
+                autocomplete="off"
+              />
+            </div>
+            <br />
+            <div class="form-item">
+              <p>Precio</p>
+              <input type="number" name="numPrecio" placeholder="Precio" />
+            </div>
+            <br />
+            <div class="final-listing">
+              <div class="final-list-item">
+                <img src="./carDoor.svg" /><input
+                  type="number"
+                  name="numPuertas"
+                  placeholder="Puertas"
+                />
+              </div>
+              <div class="final-list-item">
+                <img src="./kms.svg" />
+                <input type="number" name="numKms" placeholder="KMs" />
+              </div>
+              <div class="final-list-item">
+                <img src="./potencia.svg" />
+
+                <input
+                  type="number"
+                  name="numPotencia"
+                  placeholder="Potencia"
+                />
+              </div>
+            </div>
+
+            <div class="final-list-item">
+              <img src="./save.svg" /> <input type="submit" value="Guardar" />
+              <br />
+            </div>
+
+            <input type="hidden" name="txtId" /> <br />
+          </fieldset>
+        </form>
+      </section>
+      <section class="listado-articulos">
+        <div class="spinner">
+          <img src="./spinning-loading.gif" />
+        </div>
+        <div id="appTable" class="autoTable"></div>
+      </section>
+    </main>
+  </body>
+  <footer>
+    <div class="footer-container">
+      <ul>
+        <li><a href="">Nosotros</a></li>
+        <li><a href="">Anuncio</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Contacto</a></li>
+      </ul>
+      <div class="rights-reserved">
+        <p>Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <!--  <script>
+    /* titulo transaccion descripcion precio num_wc num_estacionamiento num_dormitorio */
+
+    const arrayToTable = (array) => {};
+  </script> -->
+</html>

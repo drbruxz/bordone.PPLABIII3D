@@ -1,0 +1,30 @@
+export const listadoPublicaciones = [
+  {
+    titulo: "Casa de Lujo en la montaña",
+    transaccion: "alquiler",
+    descripcion: "bla bla bla casa en la montaña bla bla",
+    precio: 4000,
+    numPuertas: 1,
+    numKms: 2,
+    numPotencia: 2,
+    id: 0,
+  },
+  {
+    titulo: "Casa de Lujo en la sierra",
+    transaccion: "compra",
+    descripcion: "bla bla bla casa en la sierra bla bla",
+    precio: 100000,
+    num_wc: 2,
+    num_dormitorio: 3,
+    id: 1,
+  },
+  {
+    titulo: "Casa en la ciudad",
+    transaccion: "alquiler",
+    descripcion: "bla bla bla casa en la ciudad bla bla",
+    precio: 6500,
+    num_wc: 3,
+    num_dormitorio: 3,
+    id: 2,
+  },
+];
