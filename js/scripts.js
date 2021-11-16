@@ -1,5 +1,5 @@
-import { crearTabla, handleClick } from "./dinamicas.js";
-import { Anuncio, Anuncio_Auto } from "./classes.js";
+import { crearTabla } from "./dinamicas.js";
+import { Anuncio_Auto } from "./classes.js";
 
 const $divTabla = document.getElementById("appTable");
 const $spinnerContainer = document.getElementsByClassName("spinner-container");
