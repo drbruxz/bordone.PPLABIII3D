@@ -4,7 +4,6 @@ const $divListadoArticulos = document.getElementById("container-adds-listing");
 const listadoAutomoviles =
   JSON.parse(localStorage.getItem("automoviles")) || [];
 
-console.log("listado autos", listadoAutomoviles);
 crearListadoArticulos(listadoAutomoviles);
 function crearListadoArticulos(arrayListado) {
   arrayListado.forEach((element) => {

@@ -31,8 +31,6 @@ $deleteButton.addEventListener("click", (e) => {
   handlerDelete(parseInt($id));
 });
 
-console.log("ELEMENTOS DEL FORMULARIO:", $formulario.elements);
-
 $cancelButton.addEventListener("click", (e) => {
   e.preventDefault();
   $saveAndModifyButton.value = "Guardar";
@@ -176,7 +174,6 @@ $buttonAlert.addEventListener("click", () => {
 
 const handlerCreate = (nuevoAtomovil) => {
   listadoAutomoviles.push(nuevoAtomovil);
-  console.log("listado automoviles:", listadoAutomoviles);
   limpiarTabla();
   actualizarStorage(listadoAutomoviles);
   actualizarTabla();

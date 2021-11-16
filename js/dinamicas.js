@@ -1,7 +1,3 @@
-export const handleClick = (e) => {
-  console.log(e.target.parentElement.dataset.id);
-};
-
 export const crearTabla = (data) => {
   const tabla = document.createElement("table");
   const thead = document.createElement("thead");
@@ -47,7 +43,6 @@ export const crearTabla = (data) => {
 };
 
 export const crearItemListado = (data) => {
-  console.log("data", data);
   let divContainerItem = document.createElement("div");
   divContainerItem.setAttribute("class", "container-adds-item");
 
