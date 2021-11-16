@@ -28,6 +28,9 @@ header ul li a {
   color: white;
   text-decoration: none;
 }
+main {
+  max-width: 750px;
+}
 
 .header-container {
   display: flex;
@@ -103,4 +106,74 @@ footer ul {
 footer .rights-reserved p {
   color: white;
   margin-right: 8px;
+}
+
+.button-delete-container {
+  position: relative;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.button-cancel-container {
+  position: relative;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+.spinner {
+  animation: rotation 2s infinite linear;
+  max-width: 75px;
+}
+
+.portada-container {
+}
+
+.portada-imagen {
+  max-width: -webkit-fill-available;
+}
+
+.fieldset-checkboxes {
+  display: inline-flex;
+  width: 600px;
+  margin-bottom: 12px;
+}
+
+.custom-alert {
+  display: none;
+  position: absolute;
+  left: 139px;
+  height: 323px;
+  width: 500px;
+  background-color: lightblue;
+  z-index: 10;
+}
+.custom-alert h1 {
+  align-self: center;
+  font-size: 50px;
+  text-align: -webkit-center;
+}
+
+.custom-alert button {
+  width: 150px;
+  justify-self: center;
+  margin-bottom: 24px;
+  background-color: lightgreen;
+}
+@media (max-width: 640px) {
+  .portada-imagen {
+    display: none;
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }

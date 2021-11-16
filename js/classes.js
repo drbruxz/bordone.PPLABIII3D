@@ -3,14 +3,15 @@ export class Anuncio {
   titulo;
   transaccion;
   descripcion;
-  numPrecio;
+  precio;
+  frenoAlDia;
+  aceiteAlDia;
 
   constructor(titulo, transaccion, descripcion, numPrecio) {
     this.titulo = titulo;
     this.transaccion = transaccion;
     this.descripcion = descripcion;
     this.precio = numPrecio;
-    this.id = id;
   }
 }
 export class Anuncio_Auto extends Anuncio {
@@ -25,11 +26,15 @@ export class Anuncio_Auto extends Anuncio {
     precio,
     numPuertas,
     numKms,
-    numPotencia
+    numPotencia,
+    aceiteAlDia,
+    frenoAlDia
   ) {
     super(titulo, transaccion, descripcion, precio);
     this.numPuertas = numPuertas;
     this.numKms = numKms;
     this.numPotencia = numPotencia;
+    this.frenoAlDia = frenoAlDia;
+    this.aceiteAlDia = aceiteAlDia;
   }
 }

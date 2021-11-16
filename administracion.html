@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="js/scripts.js"></script>
+    <link rel="stylesheet" href="./css/estilos.css" />
+
+    <title>Listado Automoviles</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <img src="./src/imgs/company-car-logo.png" />
+        <ul>
+          <li><a href="./index.html">Nosotros</a></li>
+          <li><a href="./administracion.html">Anuncio</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="portada-container">
+        <img src="./src/imgs/portraitadmin.jpg" alt="" class="portada-imagen" />
+      </div>
+    </header>
+    <main class="crud">
+      <section clas="form-articulos">
+        <h2>ADMINISTRACIÓN</h2>
+        <div class="custom-alert" id="custom-alert">
+          <h1 id="custom-alert-message">Operacion realizada exitosamente</h1>
+          <button class="button-alert-ok" id="button-alert">OK</button>
+        </div>
+        <form>
+          <fieldset>
+            <legend>Informacion del anuncio</legend>
+            <div class="form-item">
+              <p>Título</p>
+
+              <input
+                required
+                type="text"
+                name="txtTitulo"
+                placeholder="Título"
+                autocomplete="off"
+              />
+            </div>
+            <br />
+            <div class="form-item">
+              <p>Transaccion</p>
+              <input
+                type="radio"
+                name="rdoTransaccion"
+                value="alquiler"
+                required
+              />
+              Alquiler
+              <input
+                type="radio"
+                name="rdoTransaccion"
+                value="venta"
+                required
+              />Venta
+            </div>
+            <br />
+
+            <div class="form-item">
+              <p>Descripcion</p>
+              <input
+                required
+                type="text"
+                name="txtDescripcion"
+                placeholder="Descripcion"
+                autocomplete="off"
+              />
+            </div>
+            <br />
+            <div class="form-item">
+              <p>Precio</p>
+              <input
+                required
+                type="number"
+                name="numPrecio"
+                placeholder="Precio"
+              />
+            </div>
+            <br />
+            <div class="final-listing">
+              <div class="final-list-item">
+                <img src="./src/imgs/carDoor.svg" /><input
+                  required
+                  type="number"
+                  name="numPuertas"
+                  placeholder="Puertas"
+                />
+              </div>
+              <div class="final-list-item">
+                <img src="./src/imgs/kms.svg" />
+                <input required type="number" name="numKms" placeholder="KMs" />
+              </div>
+              <div class="final-list-item">
+                <img src="./src/imgs/potencia.svg" />
+                <input
+                  required
+                  type="number"
+                  name="numPotencia"
+                  placeholder="Potencia"
+                />
+              </div>
+            </div>
+            <div class="checkboxes-container">
+              <fieldset class="fieldset-checkboxes">
+                <legend>Revisiones al dia</legend>
+                <div class="checkbox-item-container">
+                  <input
+                    type="checkbox"
+                    name="revisiones"
+                    id="frenos"
+                    value="Frenos"
+                  />
+                  <label for="frenos">Frenos</label>
+                </div>
+                <div class="checkbox-item-container">
+                  <input
+                    type="checkbox"
+                    name="revisiones"
+                    id="aceite"
+                    value="Aceite"
+                  />
+                  <label for="aceite">Aceite</label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="final-list-item">
+              <img src="./src/imgs/save.svg" />
+              <input
+                type="submit"
+                value="Guardar"
+                id="save-and-modify-button"
+              />
+              <div class="button-delete-container">
+                <img src="./src/imgs/trashcan.png" />
+                <button id="delete-button">Eliminar</button>
+              </div>
+              <div class="button-cancel-container">
+                <img src="./src/imgs/cancel.png" />
+                <button id="cancel-button">Cancelar Edicion</button>
+              </div>
+              <br />
+            </div>
+
+            <input type="hidden" name="txtId" id="txtId" /> <br />
+          </fieldset>
+        </form>
+      </section>
+      <div class="spinner-container">
+        <img src="./src/imgs/wheelspinner.png" class="spinner" />
+      </div>
+      <section class="listado-articulos">
+        <div id="appTable" class="autoTable"></div>
+      </section>
+    </main>
+  </body>
+  <footer>
+    <div class="footer-container">
+      <ul>
+        <li><a href="./index.html">Nosotros</a></li>
+        <li><a href="./administracion.html">Anuncio</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Contacto</a></li>
+      </ul>
+      <div class="rights-reserved">
+        <p>Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <!--  <script>
+    /* titulo transaccion descripcion precio num_wc num_estacionamiento num_dormitorio */
+
+    const arrayToTable = (array) => {};
+  </script> -->
+</html>
